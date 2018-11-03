@@ -1,0 +1,12 @@
+projects:
+  app:
+    schemaPath: "src/schema.graphql"
+    extensions:
+      endpoints:
+        default: "http://localhost:4444"
+  prisma:
+    # save auto generated types from Prisma to following path:
+    schemaPath: "src/generated/prisma.graphql"
+    # get the rest configuration from 'prisma.yml' file
+    extensions:
+      prisma: prisma.yml
